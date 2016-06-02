@@ -1,15 +1,10 @@
 from kivy.app import App
-from kivy.uix.widget import Widget
+from kivy.uix.label import Label
 
+class MyApp(App):
 
-class PongGame(Widget):
-    pass
-
-
-class PongApp(App):
     def build(self):
-        return PongGame()
+        return Label(text='Hello world')
 
-
-if __name__ == '__main__':
-    PongApp().run()
+    if __name__ == '__main__':
+        MyApp().run()
