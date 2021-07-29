@@ -54,5 +54,5 @@ contacts = ["jeyfrin.julian@gmail.com","andreinabepa@gmail.com"]
 for receiver in contacts:
     with smtplib.SMTP_SSL("smtp.gmail.com", 465, context=context) as server:
         server.login(sender, "Cessna172*")
-        server.sendmail(sender, receiver, message.as_string())
+        server.sendmail(sender, receiver, message.as_string()) 
 
